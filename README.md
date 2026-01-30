@@ -52,6 +52,7 @@ mini-task-manager/
 ### Run Locally
 
 1. Clone the repository:
+    https://github.com/lmakweya9/mini-task-manager.git
 2. Navigate to the folder:
     cd mini-task-manager
 3. Run the app:
