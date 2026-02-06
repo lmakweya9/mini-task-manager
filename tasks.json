@@ -1,1 +1,10 @@
-[]
+[
+    {
+        "text": "Wake up at 7 AM",
+        "done": true
+    },
+    {
+        "text": "Shower",
+        "done": true
+    }
+]
