@@ -1,83 +1,85 @@
-# Mini Task Manager (Python GUI App)
+# 📝 Mini Task Manager v3
 
-A simple and user-friendly **task management desktop application** built with Python and Tkinter.  
-This project demonstrates GUI development, file persistence, and clean code structure.
+A modern desktop task manager built with Python and CustomTkinter. Manage your tasks efficiently with tags/categories, search, and a light/dark mode toggle. Perfect for personal productivity or showcasing Python GUI skills in your portfolio.
 
----
+## 🚀 Features:
+Add, Complete, Delete Tasks
+Search Tasks: Filter tasks by keywords in real-time.
+Tags / Categories: Assign multiple tags to each task (e.g., Work, Personal, Urgent).
+Filter by Tags: Show tasks belonging to a specific tag or “All”.
+Light/Dark Mode: Toggle between themes for a modern look and feel.
+Persistent Storage: Tasks are saved in a JSON file and restored on app launch.
+Interactive GUI: Clean, scrollable interface with intuitive buttons and task selection.
 
-## 🚀 Features
+## 📂 JSON Task Structure
+[
+  {
+    "text": "Finish portfolio update",
+    "done": false,
+    "tags": ["Work", "Urgent"]
+  },
+  {
+    "text": "Buy groceries",
+    "done": false,
+    "tags": ["Personal"]
+  }
+]
 
-- ➕ Add new tasks
-- ✅ Mark tasks as completed
-- 🗑️ Delete tasks
-- 💾 Automatically saves tasks to file
-- 🔄 Loads tasks on startup
-- 🖥️ Clean and intuitive GUI
+## 💻 Technologies Used:
+Python 3.14+
+CustomTkinter: Modern GUI framework for Python
+JSON: Persistent storage for tasks
+Optional: GitHub for version control and portfolio showcase
 
----
+## ⚙️ Installation
+Clone the repository
+git clone https://github.com/lmakweya9/mini-task-manager.git
+cd mini-task-manager
 
-## 🎬 Demo
+### Install dependencies
+pip install customtkinter
+⚠️ Make sure your Python version is 3.10+ for CustomTkinter compatibility.
 
-A short demo of the application in action:
+### Run the app
+python main.py
 
-![Task Manager Demo](demos/Demo1.gif)
+## 🏷 Usage
+Add a Task: Enter task text and optional comma-separated tags, then press Enter or click “Add”.
+Complete a Task: Select a task and click “✔ Complete”.
+Delete a Task: Select a task and click “🗑 Delete”.
+Search Tasks: Type keywords in the search bar to filter tasks in real-time.
+Filter by Tags: Use the dropdown to show tasks of a specific tag.
+Toggle Theme: Click the 🌙 / 🌞 button to switch between dark and light mode.
 
----
-
-## 🛠️ Tech Stack
-
-- **Python 3**
-- **Tkinter** (GUI Framework)
-- **JSON** (Data storage)
-
----
-
-## 📂 Project Structure
-
+## 📸 Screenshots
+Light Mode	Dark Mode
+	
+## 🏗 Project Structure
 mini-task-manager/
-│
-├── task_manager.py
-├── tasks.json
-├── demo/
-│ └── demo.gif
-└── README.md
+├─ main.py
+├─ tasks.json
+├─ README.md
+├─ requirements.txt
+├─ screenshots/
+│  ├─ mark-as-done-screen.png
+│  ├─ main-screen.png
+│  └─ light-mode.png
+│  └─ delete-task-screen.png
+│  └─ dark-mode.png
+│  └─ add-task-screen.png
 
----
+🔗 Links
 
-## ⚙️ Installation & Usage
+GitHub Repository
 
-### Prerequisites
-- Python 3.8+
+Portfolio Project Page
 
-### Run Locally
+✨ Future Enhancements
 
-1. Clone the repository:
-    https://github.com/lmakweya9/mini-task-manager.git
-2. Navigate to the folder:
-    cd mini-task-manager
-3. Run the app:
-    python task_manager.py
+Clickable tags for quick filtering
 
-## 📖 How It Works
-Tasks are stored as Python dictionaries
-Data is saved in a JSON file
-The GUI updates automatically when data changes
-File persistence allows tasks to remain after closing the app
+Task prioritization / deadlines
 
-## ✨ Example
-Input: Study Python
-Status: Pending
+Drag & drop task reordering
 
-Input: Complete project
-Status: Done ✅
-
-## 🔮 Future Improvements
-Dark mode
-Task categories
-Due dates
-Search feature
-Database integration (SQLite)
-
-## 👨‍💻 Author
-Lesego 
-Software Developer & Web Developer
+Export tasks to CSV or PDF
