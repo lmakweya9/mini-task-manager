@@ -12,6 +12,7 @@ Persistent Storage: Tasks are saved in a JSON file and restored on app launch.
 Interactive GUI: Clean, scrollable interface with intuitive buttons and task selection.
 
 ## 📂 JSON Task Structure
+```
 [
   {
     "text": "Finish portfolio update",
@@ -24,6 +25,7 @@ Interactive GUI: Clean, scrollable interface with intuitive buttons and task sel
     "tags": ["Personal"]
   }
 ]
+```
 
 ## 💻 Technologies Used:
 Python 3.14+
@@ -55,6 +57,7 @@ Toggle Theme: Click the 🌙 / 🌞 button to switch between dark and light mode
 Light Mode	Dark Mode
 	
 ## 🏗 Project Structure
+````
 mini-task-manager/
 ├─ main.py
 ├─ tasks.json
@@ -67,19 +70,11 @@ mini-task-manager/
 │  └─ delete-task-screen.png
 │  └─ dark-mode.png
 │  └─ add-task-screen.png
+````
 
-🔗 Links
 
-GitHub Repository
-
-Portfolio Project Page
-
-✨ Future Enhancements
-
+## ✨ Future Enhancements
 Clickable tags for quick filtering
-
 Task prioritization / deadlines
-
 Drag & drop task reordering
-
 Export tasks to CSV or PDF
